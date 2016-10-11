@@ -44,3 +44,5 @@ node default {
   #   class { 'my_class': }
   include role::classroom
 }
+
+#this is a comment
