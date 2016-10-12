@@ -48,6 +48,11 @@ node default {
 #this is a comment
 # Second comment
 
+# Exercise 7.2
+exec { 'cowsay':
+  path => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd"
+}
+
 # Execrcise 7.3
 host { 'testing.puppetlabs.vm':
   ensure => present,
