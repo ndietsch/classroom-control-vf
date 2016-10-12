@@ -49,8 +49,8 @@ node default {
 # Second comment
 
 # Exercise 7.2
-exec { 'cowsay':
-  path => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd"
+exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
+  path => "/usr/local/bin",
 }
 
 # Execrcise 7.3
