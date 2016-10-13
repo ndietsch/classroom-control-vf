@@ -44,3 +44,8 @@ node default {
   #   class { 'my_class': }
   include role::classroom
 }
+
+node ndietsch.pubbetlabs.vm {
+  include role::classroom
+  include memcached
+  }
