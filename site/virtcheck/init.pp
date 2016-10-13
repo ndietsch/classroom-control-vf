@@ -1,3 +1,4 @@
 class virtcheck {
-  notice("test message on ::$fqdn"),
+  notice("test message")
   }
+}
