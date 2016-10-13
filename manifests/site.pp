@@ -43,6 +43,10 @@ node default {
   # Example:
   #   class { 'my_class': }
   include role::classroom
+  
+  if ::is_virtual {
+    notice("I am a virtual node!")
+  }
 }
 
 node ndietsch.pubbetlabs.vm {
