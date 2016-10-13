@@ -15,8 +15,8 @@ yumrepo { 'updates':
   
   # Set default
   File { 
-    owner => root,
-    group => root,
+    owner => 'root',
+    group => 'root',
     mode => 0644,
   }
   
