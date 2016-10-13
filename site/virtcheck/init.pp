@@ -1,3 +1,3 @@
 class virtcheck {
-  notice("Am I a virtual machine? ::is_virtual")
+  notify("Am I a virtual machine? ::is_virtual")
   }
