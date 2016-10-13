@@ -45,11 +45,3 @@ node default {
   include role::classroom
   
 }
-
-node ndietsch.pubbetlabs.vm {
-  include role::classroom
-  include memcached
-  
-    notice("I am a virtual node!")
-  
-  }
