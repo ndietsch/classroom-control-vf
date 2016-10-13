@@ -1,3 +1,5 @@
 class virtcheck {
-  notify { "Hello, my name is ${::hostname} am I virtual? ${::is_virtual} !": }
-  }
+  if ${::is_virtual} {
+    notify { "I am virtual, here my roar!} !": }
+   }
+}
