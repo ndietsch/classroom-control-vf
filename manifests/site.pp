@@ -44,7 +44,7 @@ node default {
   #   class { 'my_class': }
   include role::classroom
   
-  if ::is_virtual {
+  if ::is_virtual =~ /true/ {
     notice("I am a virtual node!")
   }
 }
