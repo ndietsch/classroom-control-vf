@@ -43,21 +43,4 @@ node default {
   # Example:
   #   class { 'my_class': }
   include role::classroom
-  include users
-  include skeleton
 }
-
-#this is a comment
-# Second comment
-
-# Exercise 7.2
-exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-  path => "/usr/local/bin",
-}
-
-# Execrcise 7.3
-host { 'testing.puppetlabs.vm':
-  ensure => present,
-  name => 'testing.puppetlabs.vm',
-  ip => '127.0.0.1',
-  }
