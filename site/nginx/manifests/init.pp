@@ -10,7 +10,7 @@ class nginx {
   
   file { '/var/www/index.html',
     ensure => file,
-    source => 'puppet:///modules/nginx/index.html'.
+    source => 'puppet:///modules/nginx/index.html',
   }
     
   file { '/etc/nginx/nginx.conf':
